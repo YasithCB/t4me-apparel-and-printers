@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="apnCart" prefHeight="394.0" prefWidth="622.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewCartFormController">
+   <children>
+      <TableView fx:id="tblCart" layoutX="54.0" layoutY="89.0" prefHeight="248.0" prefWidth="514.0">
+         <columns>
+            <TableColumn prefWidth="162.0" text="Product ID" />
+            <TableColumn prefWidth="87.0" text="Design SKU" />
+            <TableColumn minWidth="0.0" prefWidth="47.0" text="Qty" />
+            <TableColumn minWidth="0.0" prefWidth="103.0" text="Unit Price" />
+            <TableColumn minWidth="0.0" prefWidth="114.0" text="Sub Total" />
+         </columns>
+         <contextMenu>
+            <ContextMenu />
+         </contextMenu>
+      </TableView>
+      <Label alignment="CENTER" layoutX="259.0" layoutY="45.0" prefHeight="26.0" prefWidth="101.0" text="C A R T">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnClose" buttonType="RAISED" layoutX="192.0" layoutY="348.0" prefHeight="9.0" prefWidth="238.0" styleClass="buttonClose" stylesheets="@../assert/css/css.css" text="Close" textFill="#bfbfbf" />
+   </children>
+</AnchorPane>

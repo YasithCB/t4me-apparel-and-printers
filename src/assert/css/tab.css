@@ -1,0 +1,27 @@
+{
+    -fx-primary : #DDDDDD;
+}
+
+
+.tab{
+    -fx-pref-height: 30;
+    -fx-pref-width: 150;
+    -fx-background-color: -fx-primary;
+    -fx-font-size: 10;
+}
+
+.tab-header-background{
+    -fx-background-color: -fx-primary;
+}
+
+/*.context-menu{*/
+/*    -fx-background-color: -fx-primary;*/
+/*}*/
+
+.tab .tab-label {
+    -fx-skin: "com.sun.javafx.scene.control.skin.LabelSkin";
+    -fx-background-color: transparent;
+    -fx-alignment: CENTER;
+    -fx-text-fill: #4B4B49;
+    -fx-font-size: 12px; /* all the same except this newly added one */
+}

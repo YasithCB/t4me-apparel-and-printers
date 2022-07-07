@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="apnMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="955.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <AnchorPane fx:id="apnWelcome" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #222222;">
+         <children>
+            <ImageView fx:id="imgLogo" fitHeight="150.0" fitWidth="166.0" layoutX="395.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert/images/light.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgWelcome" fitHeight="610.0" fitWidth="470.0" layoutX="485.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert/images/welcome.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblNewUser" alignment="CENTER" contentDisplay="CENTER" layoutX="634.0" layoutY="447.0" prefHeight="19.0" prefWidth="173.0" text="New User?" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnSwap" buttonType="RAISED" layoutX="646.0" layoutY="486.0" onAction="#btnSwapTabOnAction" prefHeight="42.0" prefWidth="148.0" styleClass="button2" stylesheets="@../assert/css/css.css" text="Register Now" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="apnLogin" prefHeight="610.0" prefWidth="955.0">
+         <children>
+            <ImageView fitHeight="610.0" fitWidth="955.0" layoutY="-1.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assert/images/thumb2-white-wavy-background-4k-abstract-waves-creative-white-backgrounds.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="195.0" layoutY="78.0" text="SIGN UP">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtUserName" labelFloat="true" layoutX="121.0" layoutY="284.0" onKeyReleased="#txtOnKeyReleased" prefHeight="25.0" prefWidth="233.0" promptText="User Name" />
+            <JFXPasswordField fx:id="pw" labelFloat="true" layoutX="121.0" layoutY="349.0" onKeyReleased="#txtOnKeyReleased" prefHeight="25.0" prefWidth="239.0" promptText="Password" />
+            <JFXButton fx:id="btnSignUp" buttonType="RAISED" layoutX="157.0" layoutY="491.0" onAction="#btnSignUpOnAction" prefHeight="42.0" prefWidth="166.0" styleClass="buttonMenu" stylesheets="@../assert/css/css.css" text="Sign Up" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <Label layoutX="675.0" layoutY="78.0" text="REGISTER">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtUserNameOnReg" labelFloat="true" layoutX="597.0" layoutY="202.0" onKeyReleased="#txtOnKeyReleased" prefHeight="25.0" prefWidth="233.0" promptText="User Name" />
+            <JFXPasswordField fx:id="txtPwOnReg" labelFloat="true" layoutX="597.0" layoutY="373.0" onKeyReleased="#txtOnKeyReleased" prefHeight="25.0" prefWidth="239.0" promptText="Password" />
+            <JFXButton fx:id="btnReg" buttonType="RAISED" layoutX="640.0" layoutY="491.0" onAction="#btnRegOnAction" prefHeight="42.0" prefWidth="166.0" styleClass="buttonMenu" stylesheets="@../assert/css/css.css" text="Register" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXPasswordField fx:id="txtReEnterPwOnReg" labelFloat="true" layoutX="597.0" layoutY="429.0" onKeyReleased="#txtOnKeyReleased" prefHeight="25.0" prefWidth="239.0" promptText="Re-enter Password" />
+            <JFXTextField fx:id="txtContact" labelFloat="true" layoutX="597.0" layoutY="260.0" onKeyReleased="#txtOnKeyReleased" prefHeight="25.0" prefWidth="233.0" promptText="Contact" />
+            <JFXTextField fx:id="txtUserId" labelFloat="true" layoutX="600.0" layoutY="150.0" onKeyReleased="#txtOnKeyReleased" prefHeight="25.0" prefWidth="233.0" promptText="Your User ID" />
+            <JFXTextField fx:id="txtEmail" labelFloat="true" layoutX="597.0" layoutY="316.0" onKeyReleased="#txtOnKeyReleased" prefHeight="25.0" prefWidth="233.0" promptText="E - mail" />
+            <Label fx:id="lblRegexOnSign" alignment="CENTER" layoutX="122.0" layoutY="465.0" prefHeight="26.0" prefWidth="238.0" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblRegexOnReg" alignment="CENTER" layoutX="556.0" layoutY="465.0" prefHeight="26.0" prefWidth="315.0" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblForgotPassword" layoutX="198.0" layoutY="544.0" text="Forgot Password?">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <JFXTextField fx:id="txtPassword" labelFloat="true" layoutX="121.0" layoutY="349.0" onKeyReleased="#txtOnKeyReleased" prefHeight="25.0" prefWidth="233.0" />
+            <ImageView fx:id="imageShowPassword" fitHeight="25.0" fitWidth="16.0" layoutX="338.0" layoutY="354.0" opacity="0.69" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert/images/outline_visibility_black_24dp.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

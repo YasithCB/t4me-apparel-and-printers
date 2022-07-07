@@ -1,0 +1,36 @@
+
+
+.buttonClose
+{
+-fx-background-color : #303030;
+}
+.buttonClose:hover
+{
+-fx-background-color : #D44027 ;
+}
+.buttonClose:pressed
+{
+-fx-background-color : #D44027 ;
+}
+
+
+
+.buttonMenu
+{
+    -fx-background-color : #3D3D3B;
+    -fx-text-fill: WHITE;
+    -fx-font-size: 11;
+}
+
+
+.buttonClose
+{
+    -fx-background-color : #3D3D3B;
+    -fx-font-size: 11;
+    -fx-text-fill: WHITE;
+    -fx-border-radius: 10 10 10 10;
+}.buttonClose:hover{
+     -fx-background-color : #E81123;
+ }
+
+
